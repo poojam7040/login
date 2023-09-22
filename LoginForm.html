@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.mdiv{
+			height: 100vh;
+			width: 100%;
+			background-image:url("https://c4.wallpaperflare.com/wallpaper/317/630/437/artwork-simple-background-blue-stars-wallpaper-preview.jpg") ;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: fixed;
+			top: 0px;
+			left: 0px;
+
+		}
+		.loginform{
+			width: 400px;
+			height: 800px;
+			margin: 15px 35%;
+			margin-top: 20%;
+		}
+		input:focus{
+			outline: none;
+
+		}
+		input{
+			width: 95%;
+			margin-top: 10px;
+			height: 20px;
+			background-color: transparent;
+			border: none;
+			border-bottom: 2px solid white;
+			color: white;
+			text-align: center;
+			font-weight: bolder;
+		}
+		input[type="button"]{
+			border: none;
+			background-color: whitesmoke;
+			height: 30px;
+			color: black;
+			font-size: 15px;
+			border-radius: 10px;
+			margin-bottom: 10px;
+			transition-duration: 1s,;
+		}
+		input[type="button"]:hover{
+			background-color: transparent;
+			color: white;
+			border: 2px solid white;
+			transform: scale(1,1);
+			cursor: pointer;
+		}
+
+
+	</style>
+</head>
+<body>
+<div class="mdiv">
+	<div class="loginform" align="center">
+	<form autocomplete="off">
+	<h2 class="head">LOGIN</h2>
+	
+	<input type="text" name="username" placeholder="Username" id="username" class="ip1">
+	<br><br>
+	<input type="text" name="Password" placeholder="Password" id="password" class="ip1">
+   <br><br>
+   
+    <span> <a href="">Forgot Password ?</a></span>
+    	 <input type="button" name="login" value="LOGIN" onclick="validate()">
+    	 <span><a href="">Create Account</a></span>
+   
+</form>
+</div>
+ 
+
+</div>
+
+
+<script type="text/javascript">
+	 let username1="Pooja More";
+	 let password1="Pooja8830";
+
+	 function validate(){
+	 let username2=document.getElementById("username").value;
+	 let password2=document.getElementById("Password").value;
+
+
+     if((username1===username2)&&(password1===password2))
+     {
+     	open('HomePage.html');
+     }
+     else{
+     	alert("WRONG CREDENTIALS")
+     }
+
+   }
+
+</script>
+</body>
+</html>
